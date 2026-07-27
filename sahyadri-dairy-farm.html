@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Sahyadri Dairy Farm | सह्याद्री डेअरी फार्म — Fresh From Our Farm To Your Family</title>
+<meta name="description" content="Sahyadri Dairy Farm delivers 100% fresh, hygienically processed A2 milk, curd, paneer, ghee and more, straight from our Maharashtra farm to 10,000+ trusting families every morning.">
+<meta name="keywords" content="Sahyadri Dairy Farm, fresh milk Maharashtra, A2 milk, paneer ghee curd delivery, dairy farm Pune Satara">
+<meta name="author" content="Sahyadri Dairy Farm">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sahyadri Dairy Farm | Fresh From Our Farm To Your Family">
+<meta property="og:description" content="100% fresh milk and dairy, delivered daily from our farm in the Sahyadris to your doorstep.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=1200">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sahyadri Dairy Farm">
+<meta name="twitter:description" content="Fresh From Our Farm To Your Family.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥛</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dairy",
+  "name": "Sahyadri Dairy Farm",
+  "alternateName": "सह्याद्री डेअरी फार्म",
+  "description": "Farm-fresh milk, A2 milk, curd, paneer, ghee, buttermilk, shrikhand and butter delivered daily across Maharashtra.",
+  "image": "https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=1200",
+  "telephone": "+91-98765-43210",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Karad-Satara Road, Sahyadri Foothills",
+    "addressLocality": "Satara",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "openingHours": "Mo-Su 06:00-20:00",
+  "areaServed": ["Pune", "Satara", "Kolhapur", "Sangli", "Solapur", "Nashik"]
+}
+</script>
+<style>
+:root{
+  --milk:#FBF7EF;
+  --milk-deep:#F4EEDF;
+  --cream:#EFE2C2;
+  --green:#3F6B4A;
+  --green-deep:#22402B;
+  --brown:#5C4632;
+  --brown-deep:#3A2C1E;
+  --sky:#CFE7EC;
+  --gold:#C9A054;
+  --ink:#22281f;
+  --paper:#FFFDF8;
+  --font-display:'Fraunces', 'Noto Sans Devanagari', serif;
+  --font-body:'Inter', 'Noto Sans Devanagari', sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--milk);
+  color:var(--ink);
+  font-family:var(--font-body);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+html[data-lang="mr"] body{ font-family:'Noto Sans Devanagari','Inter',sans-serif; }
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;border:none;cursor:pointer;background:none;color:inherit;}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px;}
+.container{max-width:1240px;margin:0 inline auto;padding:0 6vw;}
+.eyebrow{
+  font-family:var(--font-body);
+  text-transform:uppercase;
+  letter-spacing:.22em;
+  font-size:.72rem;
+  font-weight:600;
+  color:var(--green);
+}
+.lang-en{display:inline;}
+.lang-mr{display:none;}
+html[data-lang="mr"] .lang-en{display:none;}
+html[data-lang="mr"] .lang-mr{display:inline;}
+html[data-lang="mr"] .lang-mr.block{display:block;}
+html[data-lang="en"] .lang-en.block{display:block;}
+
+/* ============ PRELOADER ============ */
+#preloader{
+  position:fixed;inset:0;z-index:9999;
+  background:linear-gradient(180deg,#FBF7EF 0%,#F3ECD9 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;
+  transition:opacity 1s var(--ease), visibility 1s var(--ease);
+}
+#preloader.done{opacity:0;visibility:hidden;pointer-events:none;}
+.drop-wrap{position:relative;width:64px;height:90px;}
+.milk-drop{
+  position:absolute;left:50%;top:0;transform:translateX(-50%);
+  width:26px;height:34px;border-radius:50% 50% 50% 0;
+  background:linear-gradient(160deg,#fff,#eef3ea);
+  transform-origin:center;
+  animation:dropFall 1.8s ease-in-in infinite;
+  box-shadow:0 4px 18px rgba(63,107,74,.15);
+}
+@keyframes dropFall{
+  0%{ top:-10px; transform:translateX(-50%) rotate(45deg) scale(.7); opacity:0;}
+  40%{ opacity:1; }
+  70%{ top:56px; transform:translateX(-50%) rotate(45deg) scale(1); }
+  75%{ top:58px; transform:translateX(-50%) rotate(0deg) scaleX(1.6) scaleY(.4); opacity:1;}
+  100%{ top:58px; transform:translateX(-50%) rotate(0deg) scaleX(2.6) scaleY(.08); opacity:0;}
+}
+.ripple-ring{
+  position:absolute; left:50%; bottom:0; transform:translateX(-50%);
+  width:10px;height:10px;border-radius:50%;
+  border:1px solid rgba(63,107,74,.5);
+  animation:rippleGrow 1.8s ease-out infinite;
+}
+.ripple-ring:nth-child(2){animation-delay:.6s;}
+@keyframes rippleGrow{
+  0%{width:6px;height:6px;opacity:0;}
+  15%{opacity:.7;}
+  100%{width:70px;height:14px;opacity:0;border-radius:50%;}
+}
+.preload-word{
+  font-family:var(--font-display); font-style:italic; font-weight:500;
+  font-size:clamp(1.1rem,2vw,1.4rem); color:var(--green-deep); letter-spacing:.02em;
+}
+.preload-pct{
+  font-family:var(--font-body); font-size:.78rem; letter-spacing:.3em; color:var(--brown);
+  font-variant-numeric:tabular-nums;
+}
+.floating-particles{position:absolute;inset:0;overflow:hidden;pointer-events:none;}
+.particle{position:absolute;border-radius:50%;background:radial-gradient(circle,#fff,rgba(255,255,255,0));opacity:.6;animation:floatUp linear infinite;}
+@keyframes floatUp{
+  0%{transform:translateY(0) translateX(0);opacity:0;}
+  10%{opacity:.6;}
+  90%{opacity:.3;}
+  100%{transform:translateY(-100vh) translateX(20px);opacity:0;}
+}
+
+/* ============ HEADER / NAV ============ */
+header.site{
+  position:fixed; top:0; left:0; right:0; z-index:500;
+  padding:22px 6vw;
+  display:flex; align-items:center; justify-content:space-between;
+  mix-blend-mode:normal;
+  transition:background .5s var(--ease), padding .4s var(--ease), box-shadow .4s var(--ease);
+}
+header.site.scrolled{
+  background:rgba(251,247,239,.86);
+  backdrop-filter:blur(14px) saturate(140%);
+  padding:14px 6vw;
+  box-shadow:0 8px 30px -20px rgba(34,40,31,.3);
+}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand-mark{
+  width:40px;height:40px;border-radius:50%;
+  background:conic-gradient(from 200deg, var(--green), var(--gold), var(--green));
+  display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex:none;
+  box-shadow:0 4px 14px rgba(34,64,43,.25);
+}
+.brand-text{display:flex;flex-direction:column;line-height:1.1;}
+.brand-text b{font-family:var(--font-display);font-size:1.05rem;font-weight:600;letter-spacing:.01em;color:var(--green-deep);}
+.brand-text span{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brown);}
+nav.links{display:flex;gap:34px;align-items:center;}
+nav.links a{font-size:.85rem;font-weight:500;position:relative;color:var(--green-deep);}
+nav.links a::after{content:'';position:absolute;left:0;bottom:-5px;height:1px;width:0;background:var(--green);transition:width .35s var(--ease);}
+nav.links a:hover::after{width:100%;}
+.header-actions{display:flex;align-items:center;gap:14px;}
+.lang-switch{
+  display:flex;border:1px solid rgba(34,64,43,.25);border-radius:99px;padding:3px;gap:2px;background:rgba(255,255,255,.4);
+}
+.lang-switch button{
+  padding:6px 13px;border-radius:99px;font-size:.72rem;font-weight:600;letter-spacing:.03em;color:var(--brown);transition:all .35s var(--ease);
+}
+.lang-switch button.active{background:var(--green-deep);color:var(--milk);}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:99px;
+  font-size:.82rem;font-weight:600;letter-spacing:.01em;transition:transform .35s var(--ease), box-shadow .35s var(--ease);
+}
+.btn-solid{background:var(--green-deep);color:var(--milk);box-shadow:0 10px 26px -12px rgba(34,64,43,.6);}
+.btn-solid:hover{transform:translateY(-3px);box-shadow:0 16px 34px -12px rgba(34,64,43,.7);}
+.btn-outline{border:1.5px solid var(--green-deep);color:var(--green-deep);}
+.btn-outline:hover{background:var(--green-deep);color:var(--milk);}
+.hamb{display:none;width:26px;height:20px;position:relative;flex:none;}
+.hamb span{position:absolute;left:0;right:0;height:2px;background:var(--green-deep);transition:all .35s var(--ease);}
+.hamb span:nth-child(1){top:0;}
+.hamb span:nth-child(2){top:9px;}
+.hamb span:nth-child(3){top:18px;}
+
+/* mobile nav drawer */
+.mobile-nav{
+  position:fixed;inset:0;background:var(--milk);z-index:480;
+  display:flex;flex-direction:column;justify-content:center;gap:26px;padding:8vh 8vw;
+  transform:translateX(100%);transition:transform .55s var(--ease);
+}
+.mobile-nav.open{transform:translateX(0);}
+.mobile-nav a{font-family:var(--font-display);font-size:2rem;color:var(--green-deep);}
+
+/* ============ OPENING CINEMATIC ============ */
+.opening{
+  position:relative;height:100svh;min-height:640px;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  background:linear-gradient(180deg,#F7EBD2 0%,#F1DFB3 35%,#DDEAD2 70%,#CDE3D0 100%);
+}
+.opening .sun{
+  position:absolute; width:340px;height:340px;border-radius:50%;
+  left:50%;top:64%;transform:translate(-50%,-50%);
+  background:radial-gradient(circle, #FFE9AE 0%, #FCD98A 45%, rgba(252,217,138,0) 72%);
+  filter:blur(2px);
+}
+.opening .fog{
+  position:absolute;left:-10%;right:-10%;bottom:0;height:42%;
+  background:linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.75) 60%, rgba(255,255,255,.92) 100%);
+}
+.opening .hillrow{position:absolute;left:0;right:0;bottom:0;width:100%;}
+.opening .hillrow svg{width:100%;height:auto;display:block;}
+.bird{position:absolute;width:22px;height:12px;opacity:.55;}
+.opening-copy{position:relative;z-index:5;padding:0 6vw;}
+.opening-copy .eyebrow{color:var(--brown-deep);}
+.opening-title{
+  font-family:var(--font-display); font-weight:500; font-style:italic;
+  font-size:clamp(2.6rem,7.2vw,6.4rem); line-height:1.02; color:var(--green-deep);
+  margin-top:14px; letter-spacing:-.01em;
+}
+.opening-title em{display:block;font-style:normal;font-weight:300;}
+.opening-scrolltip{
+  position:absolute;bottom:36px;left:50%;transform:translateX(-50%);
+  font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--brown-deep);
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+}
+.opening-scrolltip .line{width:1px;height:34px;background:var(--brown-deep);opacity:.5;animation:tipPulse 2.2s ease-in-out infinite;}
+@keyframes tipPulse{0%,100%{transform:scaleY(.4);opacity:.3;}50%{transform:scaleY(1);opacity:.8;}}
+
+/* ============ MILK POUR DIVIDER (signature) ============ */
+.pour-divider{position:relative;height:120px;overflow:visible;background:transparent;margin-top:-1px;}
+.pour-divider svg{width:100%;height:100%;display:block;}
+.pour-divider .wave{transition:d .6s var(--ease);}
+
+/* ============ SECTION SCAFFOLDING ============ */
+section{position:relative;}
+.chapter{padding:min(16vh,150px) 0;position:relative;overflow:hidden;}
+.chapter-head{max-width:760px;margin-bottom:64px;}
+.chapter-num{font-family:var(--font-body);font-size:.72rem;letter-spacing:.3em;color:var(--gold);font-weight:700;}
+.chapter-title{
+  font-family:var(--font-display);font-weight:500;font-size:clamp(2.1rem,4.6vw,3.6rem);
+  color:var(--green-deep);line-height:1.05;margin-top:14px;
+}
+.chapter-title em{font-style:italic;font-weight:400;color:var(--brown);}
+.chapter-sub{margin-top:20px;font-size:1.05rem;line-height:1.7;color:var(--brown-deep);max-width:560px;}
+
+.reveal{opacity:0;transform:translateY(46px);}
+.reveal.in{animation:revealUp 1.1s var(--ease) forwards;}
+@keyframes revealUp{to{opacity:1;transform:translateY(0);}}
+
+/* ============ CHAPTER 1: FARM ============ */
+.farm-hero{
+  height:92vh;min-height:560px;border-radius:28px;position:relative;overflow:hidden;
+  margin:0 6vw;
+}
+.farm-hero img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);}
+.farm-hero .overlay{
+  position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,32,20,0) 40%,rgba(16,26,17,.72) 100%);
+  display:flex;align-items:flex-end;padding:56px;
+}
+.farm-hero .overlay h3{font-family:var(--font-display);color:#fff;font-weight:500;font-size:clamp(1.8rem,4vw,3.2rem);line-height:1.1;}
+.farm-hero .overlay h3 em{font-style:italic;font-weight:300;display:block;}
+.farm-grass{position:absolute;left:0;right:0;bottom:0;height:60px;overflow:hidden;pointer-events:none;}
+.blade{position:absolute;bottom:0;width:2px;background:rgba(255,255,255,.5);transform-origin:bottom center;animation:sway 4s ease-in-out infinite;}
+@keyframes sway{0%,100%{transform:rotate(-6deg);}50%{transform:rotate(7deg);}}
+
+/* ============ CHAPTER 2: JOURNEY TIMELINE ============ */
+.journey-track{
+  display:flex; gap:0; overflow-x:auto; scroll-snap-type:x proximity; padding:20px 6vw 40px;
+  scrollbar-width:none;
+}
+.journey-track::-webkit-scrollbar{display:none;}
+.milestone{
+  scroll-snap-align:start; min-width:280px; flex:0 0 280px; padding:0 30px; position:relative;
+}
+.milestone::before{
+  content:''; position:absolute; top:26px; left:0; right:-2px; height:1px; background:rgba(34,64,43,.25);
+}
+.milestone:first-child::before{left:30px;}
+.milestone .dot{
+  width:14px;height:14px;border-radius:50%;background:var(--milk);border:2px solid var(--green);
+  position:relative;z-index:2;margin-bottom:24px;transition:background .4s, transform .4s;
+}
+.milestone.in .dot{background:var(--green);transform:scale(1.3);}
+.milestone .year{font-family:var(--font-body);font-weight:700;letter-spacing:.05em;color:var(--gold);font-size:.85rem;}
+.milestone h4{font-family:var(--font-display);font-size:1.5rem;margin-top:10px;color:var(--green-deep);font-weight:500;}
+.milestone p{margin-top:10px;font-size:.92rem;color:var(--brown-deep);line-height:1.6;}
+
+/* ============ CHAPTER 3: PRODUCTS ============ */
+.product-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:26px;perspective:1200px;
+}
+.product-card{
+  background:linear-gradient(160deg, rgba(255,255,255,.72), rgba(255,255,255,.32));
+  border:1px solid rgba(255,255,255,.6);
+  border-radius:22px; padding:28px 24px 26px; backdrop-filter:blur(6px);
+  box-shadow:0 24px 50px -30px rgba(60,80,60,.35);
+  transition:transform .12s linear, box-shadow .4s var(--ease);
+  transform-style:preserve-3d; will-change:transform;
+}
+.product-card:hover{box-shadow:0 34px 64px -26px rgba(60,80,60,.45);}
+.product-card .pimg{width:100%;height:130px;border-radius:14px;overflow:hidden;margin-bottom:18px;}
+.product-card .pimg img{width:100%;height:100%;object-fit:cover;}
+.product-card h5{font-family:var(--font-display);font-size:1.2rem;color:var(--green-deep);font-weight:600;}
+.product-card p{margin-top:6px;font-size:.82rem;color:var(--brown-deep);line-height:1.5;}
+.product-card .tag{margin-top:14px;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:700;}
+
+/* ============ CHAPTER 4: TRUST ============ */
+.trust-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.trust-visual{position:relative;border-radius:26px;overflow:hidden;height:520px;}
+.trust-visual img{width:100%;height:100%;object-fit:cover;}
+.trust-list{list-style:none;display:flex;flex-direction:column;gap:0;}
+.trust-item{
+  display:flex;gap:22px;align-items:flex-start;padding:26px 0;border-top:1px solid rgba(34,64,43,.15);
+}
+.trust-item:last-child{border-bottom:1px solid rgba(34,64,43,.15);}
+.trust-num{font-family:var(--font-display);font-style:italic;font-size:1.6rem;color:var(--gold);flex:none;width:52px;}
+.trust-item h5{font-family:var(--font-display);font-size:1.3rem;color:var(--green-deep);font-weight:600;}
+.trust-item p{margin-top:6px;font-size:.9rem;color:var(--brown-deep);line-height:1.6;max-width:420px;}
+.counter{font-family:var(--font-display);font-weight:600;color:var(--green-deep);}
+
+/* ============ CHAPTER 5: GALLERY ============ */
+.gallery-grid{
+  display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:120px;gap:14px;
+}
+.gitem{border-radius:16px;overflow:hidden;cursor:pointer;position:relative;}
+.gitem img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease);}
+.gitem:hover img{transform:scale(1.09);}
+.gitem::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(20,26,16,.35));opacity:0;transition:opacity .4s;}
+.gitem:hover::after{opacity:1;}
+.g1{grid-column:span 3;grid-row:span 2;}
+.g2{grid-column:span 3;grid-row:span 1;}
+.g3{grid-column:span 3;grid-row:span 1;}
+.g4{grid-column:span 2;grid-row:span 2;}
+.g5{grid-column:span 2;grid-row:span 2;}
+.g6{grid-column:span 2;grid-row:span 2;}
+
+.lightbox{position:fixed;inset:0;background:rgba(20,24,17,.94);z-index:2000;display:none;align-items:center;justify-content:center;padding:6vw;}
+.lightbox.open{display:flex;}
+.lightbox img{max-width:92vw;max-height:86vh;border-radius:14px;object-fit:contain;}
+.lightbox .close{position:absolute;top:32px;right:5vw;color:#fff;font-size:1.6rem;}
+
+/* ============ CHAPTER 6: PROCESS ============ */
+.process-track{display:flex;gap:0;position:relative;}
+.process-track::before{content:'';position:absolute;top:38px;left:5%;right:5%;height:1px;background:repeating-linear-gradient(90deg,rgba(34,64,43,.35) 0 8px, transparent 8px 16px);}
+.process-step{flex:1;text-align:center;padding:0 10px;position:relative;}
+.process-step .pnum{
+  width:76px;height:76px;border-radius:50%;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;
+  background:var(--paper);border:1.5px solid var(--green);font-family:var(--font-display);font-size:1.5rem;color:var(--green-deep);
+  position:relative;z-index:2;transition:background .5s,color .5s,transform .5s var(--ease);
+}
+.process-step.in .pnum{background:var(--green-deep);color:var(--milk);transform:scale(1.08);}
+.process-step h5{font-family:var(--font-display);font-size:1.05rem;color:var(--green-deep);font-weight:600;}
+.process-step p{margin-top:8px;font-size:.8rem;color:var(--brown-deep);line-height:1.5;}
+
+/* ============ CHAPTER 7: TESTIMONIALS ============ */
+.testi-track{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:20px;scrollbar-width:none;}
+.testi-track::-webkit-scrollbar{display:none;}
+.testi-card{
+  scroll-snap-align:start;flex:0 0 min(420px,84vw);
+  background:rgba(255,255,255,.5);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.7);
+  border-radius:22px;padding:32px;box-shadow:0 30px 60px -34px rgba(60,80,60,.35);
+}
+.testi-stars{color:var(--gold);letter-spacing:.15em;font-size:.9rem;}
+.testi-card p.quote{margin-top:16px;font-family:var(--font-display);font-size:1.15rem;line-height:1.55;color:var(--green-deep);font-weight:400;}
+.testi-person{display:flex;align-items:center;gap:14px;margin-top:24px;}
+.testi-person img{width:48px;height:48px;border-radius:50%;object-fit:cover;}
+.testi-person b{display:block;font-size:.92rem;color:var(--green-deep);}
+.testi-person span{font-size:.76rem;color:var(--brown);}
+
+/* ============ CHAPTER 8: DELIVERY MAP ============ */
+.map-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;}
+.map-svg-wrap{position:relative;}
+.map-svg-wrap svg{width:100%;height:auto;}
+.map-city{cursor:pointer;}
+.map-city circle{fill:var(--green);transition:r .3s;}
+.map-city:hover circle, .map-city.active circle{fill:var(--gold);}
+.map-city .pulse{fill:none;stroke:var(--green);stroke-width:1.5;opacity:0;animation:pulseRing 2.4s ease-out infinite;}
+@keyframes pulseRing{0%{r:6;opacity:.7;}100%{r:22;opacity:0;}}
+.map-city text{font-size:9px;fill:var(--brown-deep);font-family:var(--font-body);font-weight:600;}
+.route-line{stroke:var(--gold);stroke-width:1.2;stroke-dasharray:4 5;fill:none;opacity:.7;animation:dash 20s linear infinite;}
+@keyframes dash{to{stroke-dashoffset:-200;}}
+.delivery-list{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;}
+.delivery-list li{
+  padding:8px 16px;border:1px solid rgba(34,64,43,.3);border-radius:99px;font-size:.82rem;color:var(--green-deep);font-weight:500;
+}
+
+/* ============ CHAPTER 9: STATS ============ */
+.stats-band{
+  background:linear-gradient(120deg,var(--green-deep),var(--green));
+  border-radius:30px;padding:70px 6vw;color:var(--milk);
+  display:grid;grid-template-columns:repeat(4,1fr);gap:30px;
+}
+.stat-item{text-align:left;}
+.stat-num{font-family:var(--font-display);font-weight:600;font-size:clamp(2.2rem,4vw,3.4rem);}
+.stat-label{margin-top:8px;font-size:.85rem;letter-spacing:.02em;opacity:.85;}
+
+/* ============ CHAPTER 10: CONTACT ============ */
+.contact-wrap{
+  background:linear-gradient(160deg,#F4EEDF,#EFE2C2);border-radius:32px;padding:80px 6vw;position:relative;overflow:hidden;
+}
+.contact-title{
+  font-family:var(--font-display);font-weight:500;font-size:clamp(2.4rem,6vw,4.6rem);color:var(--green-deep);line-height:1.05;max-width:760px;
+}
+.contact-title em{font-style:italic;font-weight:300;color:var(--brown);}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:56px;}
+.contact-detail{display:flex;flex-direction:column;gap:26px;}
+.detail-row{display:flex;gap:18px;align-items:flex-start;}
+.detail-icon{width:42px;height:42px;border-radius:50%;background:var(--green-deep);color:var(--milk);display:flex;align-items:center;justify-content:center;flex:none;font-size:1.1rem;}
+.detail-row b{display:block;font-size:.95rem;color:var(--green-deep);}
+.detail-row span{font-size:.85rem;color:var(--brown-deep);}
+.contact-cta{display:flex;flex-direction:column;gap:16px;}
+.contact-cta .btn{justify-content:center;}
+.map-embed{border-radius:20px;overflow:hidden;height:100%;min-height:260px;}
+.map-embed iframe{width:100%;height:100%;border:0;filter:saturate(.9) sepia(.06);}
+
+/* ============ FOOTER ============ */
+footer.site{padding:70px 6vw 40px;background:var(--green-deep);color:rgba(251,247,239,.8);}
+.footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:40px;}
+.footer-brand b{font-family:var(--font-display);font-size:1.4rem;color:var(--milk);}
+.footer-brand p{margin-top:10px;font-size:.85rem;max-width:280px;line-height:1.6;}
+.footer-cols{display:flex;gap:70px;flex-wrap:wrap;}
+.footer-col h6{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.footer-col a{display:block;font-size:.85rem;margin-bottom:10px;color:rgba(251,247,239,.78);}
+.footer-bottom{margin-top:56px;padding-top:26px;border-top:1px solid rgba(251,247,239,.15);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.76rem;}
+
+/* ============ STICKY MOBILE ACTIONS ============ */
+.sticky-actions{
+  position:fixed;bottom:22px;right:22px;z-index:600;display:flex;flex-direction:column;gap:12px;
+}
+.sticky-btn{
+  width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;
+  box-shadow:0 12px 28px -10px rgba(20,26,17,.5);transition:transform .3s var(--ease);
+}
+.sticky-btn:hover{transform:translateY(-3px) scale(1.05);}
+.sticky-btn.wa{background:#3F6B4A;color:#fff;}
+.sticky-btn.call{background:var(--brown-deep);color:#fff;}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:1080px){
+  .product-grid{grid-template-columns:repeat(2,1fr);}
+  .trust-wrap, .map-wrap, .contact-grid{grid-template-columns:1fr;}
+  .stats-band{grid-template-columns:repeat(2,1fr);}
+  .gallery-grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:100px;}
+  .g1{grid-column:span 4;}
+  .g2,.g3{grid-column:span 2;}
+  .g4,.g5,.g6{grid-column:span 2;}
+}
+@media (max-width:760px){
+  nav.links, .header-actions .btn-outline{display:none;}
+  .hamb{display:block;}
+  .product-grid{grid-template-columns:1fr 1fr;gap:14px;}
+  .stats-band{grid-template-columns:1fr 1fr;padding:44px 6vw;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);}
+  .g1,.g2,.g3,.g4,.g5,.g6{grid-column:span 2;grid-row:span 1;height:180px;}
+  .journey-track{padding:20px 6vw 30px;}
+  .process-track{flex-wrap:wrap;gap:34px 0;}
+  .process-track::before{display:none;}
+  .process-step{flex:0 0 50%;}
+  .farm-hero .overlay{padding:28px;}
+  .contact-wrap{padding:56px 6vw;}
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;}
+  html{scroll-behavior:auto;}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= PRELOADER ================= -->
+<div id="preloader" aria-hidden="true">
+  <div class="floating-particles" id="particleField"></div>
+  <div class="drop-wrap">
+    <div class="milk-drop"></div>
+    <div class="ripple-ring"></div>
+    <div class="ripple-ring"></div>
+  </div>
+  <div class="preload-word">
+    <span class="lang-en">Sahyadri Dairy Farm</span>
+    <span class="lang-mr">सह्याद्री डेअरी फार्म</span>
+  </div>
+  <div class="preload-pct" id="preloadPct">0%</div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header class="site" id="siteHeader">
+  <div class="brand">
+    <div class="brand-mark">🥛</div>
+    <div class="brand-text">
+      <b class="lang-en">Sahyadri Dairy</b>
+      <b class="lang-mr">सह्याद्री डेअरी</b>
+      <span class="lang-en">Farm Fresh, Since 2008</span>
+      <span class="lang-mr">ताजेपणा, २००८ पासून</span>
+    </div>
+  </div>
+  <nav class="links">
+    <a href="#farm"><span class="lang-en">Farm</span><span class="lang-mr">शेत</span></a>
+    <a href="#journey"><span class="lang-en">Journey</span><span class="lang-mr">प्रवास</span></a>
+    <a href="#products"><span class="lang-en">Products</span><span class="lang-mr">उत्पादने</span></a>
+    <a href="#gallery"><span class="lang-en">Gallery</span><span class="lang-mr">गॅलरी</span></a>
+    <a href="#delivery"><span class="lang-en">Delivery</span><span class="lang-mr">वितरण</span></a>
+    <a href="#contact"><span class="lang-en">Contact</span><span class="lang-mr">संपर्क</span></a>
+  </nav>
+  <div class="header-actions">
+    <div class="lang-switch">
+      <button class="active" data-lang="en" onclick="setLang('en')">EN</button>
+      <button data-lang="mr" onclick="setLang('mr')">मराठी</button>
+    </div>
+    <a class="btn btn-outline" href="tel:+919876543210">
+      <span class="lang-en">Call Now</span><span class="lang-mr">कॉल करा</span>
+    </a>
+    <button class="hamb" id="hambBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#farm">Farm / शेत</a>
+  <a href="#journey">Journey / प्रवास</a>
+  <a href="#products">Products / उत्पादने</a>
+  <a href="#gallery">Gallery / गॅलरी</a>
+  <a href="#delivery">Delivery / वितरण</a>
+  <a href="#contact">Contact / संपर्क</a>
+</div>
+
+<!-- ================= OPENING CINEMATIC ================= -->
+<section class="opening">
+  <div class="sun"></div>
+  <svg class="bird" style="left:20%;top:22%;" viewBox="0 0 24 12"><path d="M0 6 Q6 0 12 6 Q18 0 24 6" stroke="#3A2C1E" stroke-width="1.4" fill="none"/></svg>
+  <svg class="bird" style="left:60%;top:30%;width:16px;" viewBox="0 0 24 12"><path d="M0 6 Q6 0 12 6 Q18 0 24 6" stroke="#3A2C1E" stroke-width="1.4" fill="none"/></svg>
+  <svg class="bird" style="left:72%;top:18%;width:14px;" viewBox="0 0 24 12"><path d="M0 6 Q6 0 12 6 Q18 0 24 6" stroke="#3A2C1E" stroke-width="1.4" fill="none"/></svg>
+  <div class="hillrow">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="#BFD8B8" d="M0,224L120,208C240,192,480,160,720,165C960,171,1200,213,1320,235L1440,256L1440,320L0,320Z"/></svg>
+  </div>
+  <div class="fog"></div>
+  <div class="opening-copy">
+    <p class="eyebrow lang-en">A Morning In The Sahyadris</p>
+    <p class="eyebrow lang-mr">सह्याद्रीच्या कुशीतील एक पहाट</p>
+    <h1 class="opening-title">
+      <span class="lang-en">Pure Milk.<em>Pure Trust.</em></span>
+      <span class="lang-mr">शुद्ध दूध.<em>शुद्ध विश्वास.</em></span>
+    </h1>
+  </div>
+  <div class="opening-scrolltip">
+    <span class="lang-en">Scroll To Begin</span>
+    <span class="lang-mr">पुढे जाण्यासाठी स्क्रोल करा</span>
+    <div class="line"></div>
+  </div>
+</section>
+
+<div class="pour-divider"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path class="wave" fill="#FBF7EF" d="M0,64L80,74.7C160,85,320,107,480,101.3C640,96,800,64,960,53.3C1120,43,1280,53,1360,58.7L1440,64L1440,120L0,120Z"></path></svg></div>
+
+<!-- ================= CHAPTER 1: THE FARM ================= -->
+<section class="chapter" id="farm">
+  <div class="container chapter-head reveal">
+    <p class="chapter-num">01 <span class="lang-en">— The Farm</span><span class="lang-mr">— शेत</span></p>
+    <h2 class="chapter-title">
+      <span class="lang-en">Healthy Cows.<br><em>Healthy Milk.</em></span>
+      <span class="lang-mr">निरोगी गायी.<br><em>निरोगी दूध.</em></span>
+    </h2>
+    <p class="chapter-sub lang-en">Nestled at the foothills of the Sahyadris, our cattle graze on open, chemical-free pastures. Every drop begins here — with clean air, native grass, and unhurried mornings.</p>
+    <p class="chapter-sub lang-mr">सह्याद्रीच्या पायथ्याशी वसलेल्या आमच्या मोकळ्या, रसायनमुक्त कुरणांमध्ये आमच्या गायी चरतात. प्रत्येक थेंबाची सुरुवात इथूनच होते — स्वच्छ हवा, नैसर्गिक गवत आणि निवांत सकाळींनी.</p>
+  </div>
+  <div class="farm-hero reveal">
+    <img src="https://i.pinimg.com/736x/e6/d4/82/e6d482321f9fc92310b8495366f83b93.jpg" alt="Green rolling farmland at sunrise with grazing cattle">
+    <div class="overlay">
+      <h3><span class="lang-en">Open Pastures.<em>Golden Mornings.</em></span><span class="lang-mr">मोकळी कुरणे.<em>सोनेरी सकाळ.</em></span></h3>
+    </div>
+    <div class="farm-grass" id="grassField"></div>
+  </div>
+</section>
+
+<div class="pour-divider"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path fill="#EFE2C2" d="M0,32L120,48C240,64,480,96,720,90.7C960,85,1200,43,1320,21.3L1440,0L1440,120L0,120Z"></path></svg></div>
+
+<!-- ================= CHAPTER 2: OUR JOURNEY ================= -->
+<section class="chapter" style="background:var(--cream);" id="journey">
+  <div class="container chapter-head reveal">
+    <p class="chapter-num">02 <span class="lang-en">— Our Journey</span><span class="lang-mr">— आमचा प्रवास</span></p>
+    <h2 class="chapter-title">
+      <span class="lang-en">Rooted In <em>Patience.</em></span>
+      <span class="lang-mr">धैर्यात रुजलेला <em>प्रवास.</em></span>
+    </h2>
+  </div>
+  <div class="journey-track" id="journeyTrack">
+    <div class="milestone reveal"><div class="dot"></div><p class="year">2008</p>
+      <h4 class="lang-en">Farm Started</h4><h4 class="lang-mr">शेताची सुरुवात</h4>
+      <p class="lang-en">A small family herd of 12 cows on ancestral land near Satara.</p>
+      <p class="lang-mr">सातारा जवळील पूर्वजांच्या जमिनीवर १२ गायींच्या छोट्या कुटुंबकळपाने सुरुवात.</p>
+    </div>
+    <div class="milestone reveal"><div class="dot"></div><p class="year">2013</p>
+      <h4 class="lang-en">Expansion</h4><h4 class="lang-mr">विस्तार</h4>
+      <p class="lang-en">Herd grew to 150+, with dedicated grazing land and local partnerships.</p>
+      <p class="lang-mr">कळप १५०+ पर्यंत वाढला, स्वतंत्र कुरणे आणि स्थानिक भागीदारी सुरू.</p>
+    </div>
+    <div class="milestone reveal"><div class="dot"></div><p class="year">2017</p>
+      <h4 class="lang-en">Modern Equipment</h4><h4 class="lang-mr">आधुनिक उपकरणे</h4>
+      <p class="lang-en">Automated milking and instant chilling introduced across the farm.</p>
+      <p class="lang-mr">संपूर्ण शेतात स्वयंचलित दूध काढणी आणि त्वरित थंडावा तंत्रज्ञान सुरू.</p>
+    </div>
+    <div class="milestone reveal"><div class="dot"></div><p class="year">2020</p>
+      <h4 class="lang-en">Quality Certification</h4><h4 class="lang-mr">गुणवत्ता प्रमाणपत्र</h4>
+      <p class="lang-en">FSSAI certified processing unit with daily lab testing standards.</p>
+      <p class="lang-mr">FSSAI प्रमाणित प्रक्रिया युनिट, दररोज प्रयोगशाळा चाचणी मानकांसह.</p>
+    </div>
+    <div class="milestone reveal"><div class="dot"></div><p class="year">2024</p>
+      <h4 class="lang-en">Trusted Brand</h4><h4 class="lang-mr">विश्वासार्ह ब्रँड</h4>
+      <p class="lang-en">Serving 10,000+ families daily across six districts of Maharashtra.</p>
+      <p class="lang-mr">महाराष्ट्रातील सहा जिल्ह्यांतील १०,०००+ कुटुंबांना दररोज सेवा.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHAPTER 3: PRODUCTS ================= -->
+<section class="chapter" id="products">
+  <div class="container">
+    <div class="chapter-head reveal">
+      <p class="chapter-num">03 <span class="lang-en">— Our Products</span><span class="lang-mr">— आमची उत्पादने</span></p>
+      <h2 class="chapter-title">
+        <span class="lang-en">Made Slow.<br><em>Kept Honest.</em></span>
+        <span class="lang-mr">हळुवार बनवलेले.<br><em>प्रामाणिक ठेवलेले.</em></span>
+      </h2>
+    </div>
+    <div class="product-grid" id="productGrid">
+      <div class="product-card reveal" data-tilt><div class="pimg"><img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=600" alt="Bottle of fresh milk"></div>
+        <h5 class="lang-en">Fresh Milk</h5><h5 class="lang-mr">ताजे दूध</h5>
+        <p class="lang-en">Chilled within the hour, delivered before breakfast.</p><p class="lang-mr">एका तासात थंड केलेले, न्याहारीपूर्वी वितरित.</p>
+        <p class="tag lang-en">Daily · Farm Fresh</p><p class="tag lang-mr">दैनंदिन · शेत ताजे</p>
+      </div>
+      <div class="product-card reveal" data-tilt><div class="pimg"><img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?q=80&w=600" alt="A2 milk bottle"></div>
+        <h5 class="lang-en">A2 Milk</h5><h5 class="lang-mr">ए२ दूध</h5>
+        <p class="lang-en">From native Gir & Sahiwal cows, easy to digest.</p><p class="lang-mr">देशी गीर व साहिवाल गायींपासून, सहज पचणारे.</p>
+        <p class="tag lang-en">Native Breed</p><p class="tag lang-mr">देशी जात</p>
+      </div>
+      <div class="product-card reveal" data-tilt><div class="pimg"><img src="https://enjoyinfourseason.com/wp-content/uploads/2022/05/Fourseason-PLAIN-CURD.jpg" alt="Bowl of fresh curd"></div>
+        <h5 class="lang-en">Curd</h5><h5 class="lang-mr">दही</h5>
+        <p class="lang-en">Set the traditional way, thick and naturally tangy.</p><p class="lang-mr">पारंपरिक पद्धतीने विरजलेले, घट्ट व नैसर्गिक आंबट.</p>
+        <p class="tag lang-en">Slow Set</p><p class="tag lang-mr">हळू विरजण</p>
+      </div>
+      <div class="product-card reveal" data-tilt><div class="pimg"><img src="https://img.freepik.com/premium-photo/traditional-national-indian-food-paneer-cheese-cubes-plate-with-cilantro-table_651280-784.jpg?w=2000" alt="Cubes of fresh paneer"></div>
+        <h5 class="lang-en">Paneer</h5><h5 class="lang-mr">पनीर</h5>
+        <p class="lang-en">Hand-pressed same day, soft and never rubbery.</p><p class="lang-mr">त्याच दिवशी हाताने दाबलेले, मऊ व टणक नाही.</p>
+        <p class="tag lang-en">Same-Day</p><p class="tag lang-mr">त्याच दिवशी</p>
+      </div>
+      <div class="product-card reveal" data-tilt><div class="pimg"><img src="https://i.pinimg.com/736x/ac/f5/c9/acf5c956e402edee963ebd88fffa16c7.jpg" alt="Jar of golden ghee"></div>
+        <h5 class="lang-en">Ghee</h5><h5 class="lang-mr">तूप</h5>
+        <p class="lang-en">Bilona-churned, slow simmered over open flame.</p><p class="lang-mr">बिलोणा पद्धतीने घुसळलेले, उघड्या चुलीवर हळुवार शिजवलेले.</p>
+        <p class="tag lang-en">Bilona Method</p><p class="tag lang-mr">बिलोणा पद्धत</p>
+      </div>
+      <div class="product-card reveal" data-tilt><div class="pimg"><img src="https://i.pinimg.com/736x/24/b8/2d/24b82d77e4283dbd62fb8226130fddc4.jpg" alt="Glass of buttermilk"></div>
+        <h5 class="lang-en">Buttermilk</h5><h5 class="lang-mr">ताक</h5>
+        <p class="lang-en">Lightly spiced, churned fresh every afternoon.</p><p class="lang-mr">हलके मसालेदार, दररोज दुपारी ताजे घुसळलेले.</p>
+        <p class="tag lang-en">Churned Daily</p><p class="tag lang-mr">दररोज घुसळलेले</p>
+      </div>
+      <div class="product-card reveal" data-tilt><div class="pimg"><img src="https://i.pinimg.com/1200x/8e/5c/12/8e5c1250680b38cf4686d455be5eb5e2.jpg" alt="Bowl of shrikhand dessert"></div>
+        <h5 class="lang-en">Shrikhand</h5><h5 class="lang-mr">श्रीखंड</h5>
+        <p class="lang-en">Strained curd sweetened with cardamom & saffron.</p><p class="lang-mr">वेलची व केशराने गोड केलेले गाळलेले दही.</p>
+        <p class="tag lang-en">Festive Favourite</p><p class="tag lang-mr">सणासाठी आवडते</p>
+      </div>
+      <div class="product-card reveal" data-tilt><div class="pimg"><img src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?q=80&w=600" alt="Block of fresh white butter"></div>
+        <h5 class="lang-en">Butter</h5><h5 class="lang-mr">लोणी</h5>
+        <p class="lang-en">Hand-churned, unsalted, straight from the cream.</p><p class="lang-mr">हाताने घुसळलेले, बिनमीठाचे, सायीपासून थेट.</p>
+        <p class="tag lang-en">Hand Churned</p><p class="tag lang-mr">हाताने घुसळलेले</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pour-divider"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path fill="#F4EEDF" d="M0,64L80,80C160,96,320,128,480,122.7C640,117,800,75,960,64C1120,53,1280,75,1360,85.3L1440,96L1440,0L0,0Z"></path></svg></div>
+
+<!-- ================= CHAPTER 4: TRUST ================= -->
+<section class="chapter" style="background:var(--milk-deep);">
+  <div class="container trust-wrap">
+    <div class="trust-visual reveal">
+      <img src="https://i.pinimg.com/736x/c4/50/8e/c4508e507c47bceedccea4fa96cc3859.jpg" alt="Farmer inspecting milk quality in a modern dairy lab">
+    </div>
+    <div class="reveal">
+      <p class="chapter-num">04 <span class="lang-en">— Why Families Trust Us</span><span class="lang-mr">— कुटुंबे आमच्यावर का विश्वास ठेवतात</span></p>
+      <ul class="trust-list">
+        <li class="trust-item"><span class="trust-num">01</span><div>
+          <h5 class="lang-en"><span class="counter" data-count="100">0</span>% Fresh Milk</h5>
+          <h5 class="lang-mr"><span class="counter" data-count="100">0</span>% ताजे दूध</h5>
+          <p class="lang-en">No blending, no additives — only what the cow gives.</p><p class="lang-mr">कोणतेही मिश्रण नाही, कोणतेही मिश्रित पदार्थ नाहीत — फक्त गाय देते तेच.</p>
+        </div></li>
+        <li class="trust-item"><span class="trust-num">02</span><div>
+          <h5 class="lang-en">Daily Collection</h5><h5 class="lang-mr">दैनंदिन संकलन</h5>
+          <p class="lang-en">Collected twice a day, never stored beyond 24 hours.</p><p class="lang-mr">दिवसातून दोनदा संकलित, २४ तासांपेक्षा जास्त साठवले जात नाही.</p>
+        </div></li>
+        <li class="trust-item"><span class="trust-num">03</span><div>
+          <h5 class="lang-en">Hygienic Processing</h5><h5 class="lang-mr">स्वच्छ प्रक्रिया</h5>
+          <p class="lang-en">Stainless steel lines, sealed against contact and dust.</p><p class="lang-mr">स्टेनलेस स्टील लाइन्स, संपर्क आणि धूळीपासून सीलबंद.</p>
+        </div></li>
+        <li class="trust-item"><span class="trust-num">04</span><div>
+          <h5 class="lang-en">Quality Tested</h5><h5 class="lang-mr">गुणवत्ता चाचणी</h5>
+          <p class="lang-en">Every batch checked for fat, SNF and purity before dispatch.</p><p class="lang-mr">पाठवण्यापूर्वी प्रत्येक बॅचची फॅट, SNF व शुद्धतेसाठी तपासणी.</p>
+        </div></li>
+        <li class="trust-item"><span class="trust-num">05</span><div>
+          <h5 class="lang-en">Farm Fresh Delivery</h5><h5 class="lang-mr">शेत-ताजे वितरण</h5>
+          <p class="lang-en">Cold-chain vehicles reach your doorstep by sunrise.</p><p class="lang-mr">कोल्ड-चेन वाहने सूर्योदयापूर्वी तुमच्या दारापर्यंत पोहोचतात.</p>
+        </div></li>
+        <li class="trust-item"><span class="trust-num">06</span><div>
+          <h5 class="lang-en">Natural Nutrition</h5><h5 class="lang-mr">नैसर्गिक पोषण</h5>
+          <p class="lang-en">No hormones, no antibiotics — just grass and time.</p><p class="lang-mr">कोणतेही हार्मोन्स नाहीत, प्रतिजैविके नाहीत — फक्त गवत आणि वेळ.</p>
+        </div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHAPTER 5: GALLERY ================= -->
+<section class="chapter" id="gallery" style="background:var(--milk);">
+  <div class="container">
+    <div class="chapter-head reveal">
+      <p class="chapter-num">05 <span class="lang-en">— Farm Experience</span><span class="lang-mr">— शेतातील अनुभव</span></p>
+      <h2 class="chapter-title"><span class="lang-en">A Day At <em>Sahyadri.</em></span><span class="lang-mr">सह्याद्रीतील <em>एक दिवस.</em></span></h2>
+    </div>
+    <div class="gallery-grid reveal" id="galleryGrid">
+      <div class="gitem g1"><img src="https://www.shutterstock.com/image-photo/aerial-photography-height-large-suburban-600nw-2252722541.jpg" alt="Aerial drone view of green dairy farm"></div>
+      <div class="gitem g2"><img src="https://img.freepik.com/premium-photo/cows-grazing-lush-green-pasture-sunset_604472-83674.jpg" alt="Cattle grazing at dawn"></div>
+      <div class="gitem g3"><img src="https://www.onegreenplanet.org/wp-content/uploads/2017/02/shutterstock_185436203-scaled.jpg" alt="Cow being milked in the shed"></div>
+      <div class="gitem g4"><img src="https://thumbs.dreamstime.com/b/closeup-hands-gloves-holding-milk-bottles-dairy-production-line-bottles-filled-fresh-milk-ready-346420414.jpg" alt="Workers packaging fresh milk bottles"></div>
+      <div class="gitem g5"><img src="https://southernrefrigeration.co.in/wp-content/uploads/2024/03/Dairy-sector-Add-Image-1.jpg" alt="Cold storage room with milk crates"></div>
+      <div class="gitem g6"><img src="https://img.freepik.com/premium-photo/sunrise-rolling-hills_1306868-10618.jpg" alt="Sunrise over Sahyadri hills and farmland"></div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox"><span class="close" id="lightboxClose">✕</span><img id="lightboxImg" src="" alt=""></div>
+
+<!-- ================= CHAPTER 6: QUALITY PROCESS ================= -->
+<section class="chapter" style="background:var(--cream);">
+  <div class="container">
+    <div class="chapter-head reveal">
+      <p class="chapter-num">06 <span class="lang-en">— Quality Process</span><span class="lang-mr">— गुणवत्ता प्रक्रिया</span></p>
+      <h2 class="chapter-title"><span class="lang-en">From Udder To <em>Doorstep.</em></span><span class="lang-mr">कासेपासून <em>दारापर्यंत.</em></span></h2>
+    </div>
+    <div class="process-track" id="processTrack">
+      <div class="process-step reveal"><div class="pnum">1</div><h5 class="lang-en">Cow Care</h5><h5 class="lang-mr">गाईंची काळजी</h5><p class="lang-en">Rested, grazed, checked daily by our vet.</p><p class="lang-mr">विश्रांती, चराई, आमच्या पशुवैद्यांकडून दैनंदिन तपासणी.</p></div>
+      <div class="process-step reveal"><div class="pnum">2</div><h5 class="lang-en">Milk Collection</h5><h5 class="lang-mr">दूध संकलन</h5><p class="lang-en">Machine-milked in sealed, sanitised lines.</p><p class="lang-mr">सीलबंद, स्वच्छ लाइन्समध्ये यंत्राने काढलेले.</p></div>
+      <div class="process-step reveal"><div class="pnum">3</div><h5 class="lang-en">Quality Testing</h5><h5 class="lang-mr">गुणवत्ता चाचणी</h5><p class="lang-en">Lab-checked for fat, SNF and adulterants.</p><p class="lang-mr">फॅट, SNF व भेसळीसाठी प्रयोगशाळेत तपासणी.</p></div>
+      <div class="process-step reveal"><div class="pnum">4</div><h5 class="lang-en">Cooling</h5><h5 class="lang-mr">थंड करणे</h5><p class="lang-en">Chilled to 4°C within the hour.</p><p class="lang-mr">एका तासात ४°C पर्यंत थंड केले जाते.</p></div>
+      <div class="process-step reveal"><div class="pnum">5</div><h5 class="lang-en">Packaging</h5><h5 class="lang-mr">पॅकेजिंग</h5><p class="lang-en">Sealed in food-grade, tamper-proof bottles.</p><p class="lang-mr">अन्न-श्रेणी, छेडछाड-प्रतिरोधक बाटल्यांमध्ये सीलबंद.</p></div>
+      <div class="process-step reveal"><div class="pnum">6</div><h5 class="lang-en">Delivery</h5><h5 class="lang-mr">वितरण</h5><p class="lang-en">Cold-chain routes reach you by sunrise.</p><p class="lang-mr">कोल्ड-चेन मार्ग सूर्योदयापूर्वी तुमच्यापर्यंत पोहोचतात.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHAPTER 7: TESTIMONIALS ================= -->
+<section class="chapter" style="background:linear-gradient(160deg,var(--sky),var(--milk));">
+  <div class="container">
+    <div class="chapter-head reveal">
+      <p class="chapter-num">07 <span class="lang-en">— Testimonials</span><span class="lang-mr">— प्रतिक्रिया</span></p>
+      <h2 class="chapter-title"><span class="lang-en">Words From <em>Our Families.</em></span><span class="lang-mr">आमच्या <em>कुटुंबांच्या शब्दांत.</em></span></h2>
+    </div>
+    <div class="testi-track reveal">
+      <div class="testi-card">
+        <p class="testi-stars">★★★★★</p>
+        <p class="quote lang-en">"The milk tastes the way it did at my grandmother's house. My kids actually ask for it now."</p>
+        <p class="quote lang-mr">"दूधाची चव अगदी माझ्या आजीच्या घरासारखी आहे. आता माझी मुलेही स्वतःहून मागतात."</p>
+        <div class="testi-person"><img src="https://i.pravatar.cc/100?img=47" alt="Portrait of Anjali Deshmukh"><div><b>Anjali Deshmukh</b><span class="lang-en">Pune</span><span class="lang-mr">पुणे</span></div></div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-stars">★★★★★</p>
+        <p class="quote lang-en">"Punctual every single morning for two years. That kind of reliability is rare."</p>
+        <p class="quote lang-mr">"दोन वर्षांपासून प्रत्येक सकाळी वेळेवर. अशी विश्वासार्हता दुर्मिळ आहे."</p>
+        <div class="testi-person"><img src="https://i.pravatar.cc/100?img=12" alt="Portrait of Suresh Patil"><div><b>Suresh Patil</b><span class="lang-en">Satara</span><span class="lang-mr">सातारा</span></div></div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-stars">★★★★★</p>
+        <p class="quote lang-en">"Their ghee changed how my mother cooks festival sweets. Worth every rupee."</p>
+        <p class="quote lang-mr">"त्यांच्या तुपाने माझ्या आईचा सणाचा गोडाधोडाचा स्वयंपाकच बदलून टाकला."</p>
+        <div class="testi-person"><img src="https://i.pravatar.cc/100?img=33" alt="Portrait of Priya Kulkarni"><div><b>Priya Kulkarni</b><span class="lang-en">Kolhapur</span><span class="lang-mr">कोल्हापूर</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHAPTER 8: DELIVERY NETWORK ================= -->
+<section class="chapter" id="delivery">
+  <div class="container map-wrap">
+    <div class="reveal">
+      <p class="chapter-num">08 <span class="lang-en">— Delivery Network</span><span class="lang-mr">— वितरण नेटवर्क</span></p>
+      <h2 class="chapter-title"><span class="lang-en">Reaching <em>Six Districts.</em></span><span class="lang-mr">सहा <em>जिल्ह्यांपर्यंत.</em></span></h2>
+      <p class="chapter-sub lang-en">From our farm gate, cold-chain routes fan out across Western Maharashtra every single morning.</p>
+      <p class="chapter-sub lang-mr">आमच्या शेताच्या दारापासून, कोल्ड-चेन मार्ग दररोज सकाळी पश्चिम महाराष्ट्रात पसरतात.</p>
+      <ul class="delivery-list">
+        <li>Pune</li><li>Satara</li><li>Kolhapur</li><li>Sangli</li><li>Solapur</li><li>Nashik</li>
+      </ul>
+      <a class="btn btn-solid" style="margin-top:30px;" href="https://wa.me/919876543210?text=Hi!%20I%27d%20like%20to%20order%20from%20Sahyadri%20Dairy%20Farm" target="_blank" rel="noopener">
+        <span class="lang-en">Order on WhatsApp</span><span class="lang-mr">व्हॉट्सअॅपवर ऑर्डर करा</span>
+      </a>
+    </div>
+    <div class="map-svg-wrap reveal">
+      <svg viewBox="0 0 420 460" role="img" aria-label="Map of Maharashtra delivery network">
+        <path d="M60,80 C40,140 30,220 60,300 C90,380 170,420 230,410 C300,400 360,340 380,260 C400,180 370,100 300,60 C230,20 100,20 60,80 Z" fill="#F0E4C8" stroke="#C9A054" stroke-width="1.4"/>
+        <path class="route-line" d="M210,230 Q150,140 100,100"/>
+        <path class="route-line" d="M210,230 Q260,150 300,90"/>
+        <path class="route-line" d="M210,230 Q170,300 130,340"/>
+        <path class="route-line" d="M210,230 Q260,300 300,350"/>
+        <path class="route-line" d="M210,230 Q300,250 340,220"/>
+        <g class="map-city" tabindex="0"><circle class="pulse" cx="210" cy="230" r="6"/><circle cx="210" cy="230" r="7"/><text x="220" y="234">Satara</text></g>
+        <g class="map-city" tabindex="0"><circle class="pulse" cx="100" cy="100" r="6"/><circle cx="100" cy="100" r="5"/><text x="108" y="98">Pune</text></g>
+        <g class="map-city" tabindex="0"><circle class="pulse" cx="300" cy="90" r="6"/><circle cx="300" cy="90" r="5"/><text x="308" y="88">Nashik</text></g>
+        <g class="map-city" tabindex="0"><circle class="pulse" cx="130" cy="340" r="6"/><circle cx="130" cy="340" r="5"/><text x="138" y="345">Kolhapur</text></g>
+        <g class="map-city" tabindex="0"><circle class="pulse" cx="300" cy="350" r="6"/><circle cx="300" cy="350" r="5"/><text x="308" y="355">Solapur</text></g>
+        <g class="map-city" tabindex="0"><circle class="pulse" cx="340" cy="220" r="6"/><circle cx="340" cy="220" r="5"/><text x="348" y="225">Sangli</text></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHAPTER 9: STATS ================= -->
+<section class="chapter" style="padding-top:0;">
+  <div class="container">
+    <div class="stats-band reveal">
+      <div class="stat-item"><div class="stat-num"><span class="counter" data-count="10000">0</span>+</div>
+        <div class="stat-label lang-en">Happy Families</div><div class="stat-label lang-mr">आनंदी कुटुंबे</div></div>
+      <div class="stat-item"><div class="stat-num"><span class="counter" data-count="500">0</span>+</div>
+        <div class="stat-label lang-en">Daily Deliveries</div><div class="stat-label lang-mr">दैनंदिन वितरण</div></div>
+      <div class="stat-item"><div class="stat-num"><span class="counter" data-count="100">0</span>%</div>
+        <div class="stat-label lang-en">Quality Tested</div><div class="stat-label lang-mr">गुणवत्ता चाचणी</div></div>
+      <div class="stat-item"><div class="stat-num" style="font-size:1.6rem;">
+          <span class="lang-en">Fresh Every Morning</span><span class="lang-mr">दररोज सकाळी ताजे</span></div>
+        <div class="stat-label lang-en">Our Only Promise</div><div class="stat-label lang-mr">आमचे एकमेव वचन</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHAPTER 10: CONTACT ================= -->
+<section class="chapter" id="contact">
+  <div class="container">
+    <div class="contact-wrap reveal">
+      <p class="chapter-num">09 <span class="lang-en">— Get In Touch</span><span class="lang-mr">— संपर्क साधा</span></p>
+      <h2 class="contact-title">
+        <span class="lang-en">Let's Bring<br><em>Freshness Home.</em></span>
+        <span class="lang-mr">चला, घरी<br><em>ताजेपणा आणूया.</em></span>
+      </h2>
+      <div class="contact-grid">
+        <div class="contact-detail">
+          <div class="detail-row"><div class="detail-icon">📞</div><div>
+            <b class="lang-en">Phone</b><b class="lang-mr">फोन</b>
+            <span>+91 9309422382</span></div></div>
+          <div class="detail-row"><div class="detail-icon">💬</div><div>
+            <b class="lang-en">WhatsApp</b><b class="lang-mr">व्हॉट्सअॅप</b>
+            <span>+91 9373405033</span></div></div>
+          <div class="detail-row"><div class="detail-icon">📍</div><div>
+            <b class="lang-en">Farm Address</b><b class="lang-mr">शेताचा पत्ता</b>
+            <span class="lang-en">Karad–Satara Road, Sahyadri Foothills, Satara, MH 415110</span>
+            <span class="lang-mr">कराड–सातारा रोड, सह्याद्री पायथा, सातारा, महाराष्ट्र ४१५११०</span></div></div>
+          <div class="detail-row"><div class="detail-icon">🕒</div><div>
+            <b class="lang-en">Working Hours</b><b class="lang-mr">कामाचे तास</b>
+            <span class="lang-en">6:00 AM – 8:00 PM, All Days</span>
+            <span class="lang-mr">सकाळी ६:०० – रात्री ८:००, सर्व दिवस</span></div></div>
+          <div class="contact-cta">
+            <a class="btn btn-solid" href="tel:+919309422382"><span class="lang-en">Call Now</span><span class="lang-mr">कॉल करा</span></a>
+            <a class="btn btn-outline" href="https://wa.me/919373405022" target="_blank" rel="noopener"><span class="lang-en">WhatsApp Order</span><span class="lang-mr">व्हॉट्सअॅप ऑर्डर</span></a>
+            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Satara+Maharashtra" target="_blank" rel="noopener"><span class="lang-en">Get Directions</span><span class="lang-mr">दिशा मिळवा</span></a>
+          </div>
+        </div>
+        <div class="map-embed">
+          <iframe title="Sahyadri Dairy Farm location map" loading="lazy" src="https://www.google.com/maps?q=Satara,Maharashtra&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <b class="lang-en">Sahyadri Dairy Farm</b><b class="lang-mr">सह्याद्री डेअरी फार्म</b>
+      <p class="lang-en">Fresh from our farm to your family, every single morning.</p>
+      <p class="lang-mr">आमच्या शेतापासून तुमच्या कुटुंबापर्यंत, प्रत्येक सकाळी ताजेपणा.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h6 class="lang-en">Explore</h6><h6 class="lang-mr">पहा</h6>
+        <a href="#farm" class="lang-en">Farm</a><a href="#farm" class="lang-mr">शेत</a>
+        <a href="#products" class="lang-en">Products</a><a href="#products" class="lang-mr">उत्पादने</a>
+        <a href="#gallery" class="lang-en">Gallery</a><a href="#gallery" class="lang-mr">गॅलरी</a>
+      </div>
+      <div class="footer-col">
+        <h6 class="lang-en">Contact</h6><h6 class="lang-mr">संपर्क</h6>
+        <a href="tel:+919876543210">+91 98765 43210</a>
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="#contact" class="lang-en">Satara, Maharashtra</a><a href="#contact" class="lang-mr">सातारा, महाराष्ट्र</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Sahyadri Dairy Farm. <span class="lang-en">All rights reserved.</span><span class="lang-mr">सर्व हक्क राखीव.</span></span>
+    <span class="lang-en">Crafted with care in the Sahyadris.</span>
+    <span class="lang-mr">सह्याद्रीत प्रेमाने घडवलेले.</span>
+  </div>
+</footer>
+
+<!-- ================= STICKY MOBILE ACTIONS ================= -->
+<div class="sticky-actions">
+  <a class="sticky-btn wa" href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  <a class="sticky-btn call" href="tel:+919876543210" aria-label="Call">📞</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+/* ---------- LANGUAGE SWITCH ---------- */
+function setLang(lang){
+  document.documentElement.setAttribute('data-lang', lang);
+  document.documentElement.setAttribute('lang', lang === 'mr' ? 'mr' : 'en');
+  document.querySelectorAll('.lang-switch button').forEach(b=>b.classList.toggle('active', b.dataset.lang===lang));
+  document.body.style.opacity = 0.55;
+  requestAnimationFrame(()=>{ document.body.style.transition='opacity .45s ease'; document.body.style.opacity = 1; });
+  localStorage.setItem && null; // no persistent storage needed for a static demo
+}
+
+/* ---------- PRELOADER ---------- */
+(function(){
+  const field = document.getElementById('particleField');
+  for(let i=0;i<26;i++){
+    const p = document.createElement('div');
+    p.className='particle';
+    const size = 2 + Math.random()*4;
+    p.style.width=size+'px'; p.style.height=size+'px';
+    p.style.left = Math.random()*100+'%';
+    p.style.bottom = '-10px';
+    p.style.animationDuration = (5+Math.random()*6)+'s';
+    p.style.animationDelay = (Math.random()*5)+'s';
+    field.appendChild(p);
+  }
+  const pctEl = document.getElementById('preloadPct');
+  let pct = 0;
+  const timer = setInterval(()=>{
+    pct += Math.floor(Math.random()*9)+3;
+    if(pct>=100){ pct=100; clearInterval(timer); finishLoad(); }
+    pctEl.textContent = pct+'%';
+  }, 140);
+  function finishLoad(){
+    setTimeout(()=>{
+      document.getElementById('preloader').classList.add('done');
+      initReveals();
+      initCounters();
+    }, 420);
+  }
+  window.addEventListener('load', ()=>{ if(pct<100){ pct=100; pctEl.textContent='100%'; clearInterval(timer); finishLoad(); } });
+})();
+
+/* ---------- HEADER SCROLL STATE ---------- */
+const header = document.getElementById('siteHeader');
+window.addEventListener('scroll', ()=>{
+  header.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+/* ---------- MOBILE NAV ---------- */
+const hambBtn = document.getElementById('hambBtn');
+const mobileNav = document.getElementById('mobileNav');
+hambBtn.addEventListener('click', ()=>{
+  mobileNav.classList.toggle('open');
+  hambBtn.classList.toggle('active');
+});
+mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>mobileNav.classList.remove('open')));
+
+/* ---------- SCROLL REVEALS ---------- */
+function initReveals(){
+  const els = document.querySelectorAll('.reveal, .milestone, .process-step');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold:.18});
+  els.forEach(el=>io.observe(el));
+}
+
+/* ---------- ANIMATED COUNTERS ---------- */
+function initCounters(){
+  const counters = document.querySelectorAll('.counter');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const el = e.target;
+        const target = parseInt(el.dataset.count,10);
+        const dur = 1800;
+        const start = performance.now();
+        function tick(now){
+          const p = Math.min(1,(now-start)/dur);
+          const eased = 1 - Math.pow(1-p,3);
+          el.textContent = Math.floor(eased*target).toLocaleString('en-IN');
+          if(p<1) requestAnimationFrame(tick); else el.textContent = target.toLocaleString('en-IN');
+        }
+        requestAnimationFrame(tick);
+        io.unobserve(el);
+      }
+    });
+  }, {threshold:.6});
+  counters.forEach(c=>io.observe(c));
+}
+
+/* ---------- GRASS BLADES ---------- */
+(function(){
+  const field = document.getElementById('grassField');
+  if(!field) return;
+  for(let i=0;i<70;i++){
+    const b = document.createElement('div');
+    b.className='blade';
+    const h = 14+Math.random()*26;
+    b.style.height = h+'px';
+    b.style.left = (i*(100/70))+'%';
+    b.style.animationDuration = (3+Math.random()*2.4)+'s';
+    b.style.animationDelay = (Math.random()*3)+'s';
+    field.appendChild(b);
+  }
+})();
+
+/* ---------- PRODUCT CARD 3D TILT ---------- */
+document.querySelectorAll('[data-tilt]').forEach(card=>{
+  card.addEventListener('mousemove', (e)=>{
+    const r = card.getBoundingClientRect();
+    const x = (e.clientX - r.left)/r.width - .5;
+    const y = (e.clientY - r.top)/r.height - .5;
+    card.style.transform = `rotateY(${x*10}deg) rotateX(${-y*10}deg) translateY(-6px)`;
+  });
+  card.addEventListener('mouseleave', ()=>{ card.style.transform=''; });
+});
+
+/* ---------- GALLERY LIGHTBOX ---------- */
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+document.querySelectorAll('.gitem img').forEach(img=>{
+  img.parentElement.addEventListener('click', ()=>{
+    lightboxImg.src = img.src.replace('w=1200','w=1800').replace('w=900','w=1800').replace('w=700','w=1800');
+    lightboxImg.alt = img.alt;
+    lightbox.classList.add('open');
+  });
+});
+document.getElementById('lightboxClose').addEventListener('click', ()=>lightbox.classList.remove('open'));
+lightbox.addEventListener('click', (e)=>{ if(e.target===lightbox) lightbox.classList.remove('open'); });
+
+/* ---------- MILK POUR DIVIDER MORPH ON SCROLL ---------- */
+if(window.gsap && window.ScrollTrigger){
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.utils.toArray('.pour-divider .wave').forEach(wave=>{
+    ScrollTrigger.create({
+      trigger: wave, start:'top bottom', end:'bottom top',
+      onUpdate: self=>{
+        const t = self.progress;
+        const shift = Math.sin(t*Math.PI)*18;
+        wave.setAttribute('d', `M0,${64+shift}L80,${74+shift}C160,${85+shift},320,${107-shift},480,${101-shift}C640,${96-shift},800,${64+shift},960,${53+shift}C1120,${43+shift},1280,${53+shift},1360,${58+shift}L1440,${64+shift}L1440,120L0,120Z`);
+      }
+    });
+  });
+}
+
+/* ---------- MAP CITY ACTIVE STATE ---------- */
+document.querySelectorAll('.map-city').forEach(c=>{
+  c.addEventListener('click', ()=>{
+    document.querySelectorAll('.map-city').forEach(o=>o.classList.remove('active'));
+    c.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
